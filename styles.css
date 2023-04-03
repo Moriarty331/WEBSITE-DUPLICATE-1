@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.nav-bar{
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 40px;
+    font-weight: 200;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-bar > ul{
+    height: inherit;
+}
+
+
+.nav-bar > ul > li{
+    float: left;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-bar > ul > li:hover:not(.dropdown){
+    background-color: white;
+    color: black;
+}
+
+.nav-bar > ul a{
+    padding: 0 15px 0 15px;
+    color: white;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar > ul > li:hover:not(.dropdown) a{
+    background-color: white;
+    color: black;
+}
+
+.dropdown > img{
+    width : 20px;
+    filter: invert(100%) sepia(5%) saturate(7491%) hue-rotate(181deg) brightness(104%) contrast(90%);
+}
+
+.dropdown{
+    padding: 0 15px 0 15px;
+}
+
+.dropdown-content{
+    color: black;
+    position: absolute;
+    left: 373px;
+    top: 40px;
+    display: none;
+    box-shadow: -3px 1px 5px 3px rgba(0,0,0,0.21);
+    -webkit-box-shadow: -3px 1px 5px 3px rgba(0,0,0,0.21);
+    -moz-box-shadow: -3px 1px 5px 3px rgba(0,0,0,0.21);
+    background-color: white;
+}
+
+.dropdown-content li{
+    height: 45px;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px 0 15px;
+}
+
+.dropdown:hover{
+    background-color: #C0C0C0;
+    color: black;
+}
+
+.dropdown-content li:hover{
+    background-color: #C0C0C0;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover > img {
+    filter: invert(0%) sepia(0%) saturate(18%) hue-rotate(279deg) brightness(87%) contrast(104%);
+}
+
+.front-page{
+    height: 560px;
+    background-image: url(https://www.w3schools.com/w3images/sailboat.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.front-page{
+    display: flex;
+    align-items: flex-end;
+}
+
+.front-page > p{
+    font-size: 25px;
+    color: white;
+    margin: 0;
+    display: inline;
+    background-color: black;
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    width: 200px;
+    margin: 0 0 20px 20px;
+}
+
+#our-team{
+    padding-top: 50px;
+    text-align: center;
+    line-height: 50pxpx;
+    padding-bottom: 50px;
+}
+
+.team > div img{
+    width: 250px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.team{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#our-team > p:first-child{
+    font-size: 40px;
+    font-weight: 250;
+}
+
+#our-team > p:nth-child(2){
+    font-size: 20px;
+    font-weight: 250;
+}
+
+.team > div p{
+    font-size: 20px;
+    font-weight: 250;
+    line-height: 25px;
+}
+
+#our-work{
+    padding: 50px 40px 50px 40px;
+    
+    color: white;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#our-work img{
+    width: 100%;
+}
+
+#our-work > div:not(:first-child){
+    color: black;
+    background-color: white;
+}
+
+#our-work h1{
+    font-size: 30px;
+    font-weight: 280;
+}
+
+.our-work-description h1{
+    margin-bottom: 20px;
+}
+
+#our-work p{
+    font-weight: 200;
+}
+
+#our-work > div:not(:first-child){
+    line-height: 40px;
+    padding-bottom: 10px;
+}
+
+#our-work > div:not(:first-child) > *:not(img)
+{
+    padding-left: 20px;
+}
+
+#pricing{
+   padding: 50px 50px 70px 50px;
+}
+
+#pricing > *{
+    text-align: center;
+}
+
+#pricing h1{
+    font-weight: 400;
+}
+
+#pricing p{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.pricing-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 25px;
+    gap: 20px;
+}
+
+.pricing-content > div{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pricing-content > div h1{
+    color: white;
+    font-size: 25px;
+    padding: 25px;
+}
+
+.pricing-content > div > ul li{
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+.pricing-basic h1, .pricing-premium h1{
+    background-color: black;
+}
+
+.pricing-pro h1{
+    background-color: gray;
+}
+
+.pricing-content button{
+    font-size: 15px;
+    background-color: #009688;
+    width: 150px;
+    height: 50px;
+    font-weight: 300;
+    color: white;
+    cursor: pointer;
+}
+
+.pricing-content button:hover{
+    background-color: #C0C0C0;
+    color: black;
+}
+
+.pricing-content > div:hover{
+    box-shadow: 1px 1px 5px 8px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 1px 1px 5px 8px rgba(0,0,0,0.24);
+    -moz-box-shadow: 1px 1px 5px 8px rgba(0,0,0,0.24);
+}
+
+#contact{
+    width: 100%;
+    height: 500px;
+    background-color: #DCDCDC;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    line-height: 50px;
+}
+
+#contact h2{
+    font-weight: 300;
+    font-size: 30px;
+}
+
+#contact p{
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.forum{
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    font-weight: 200;
+}
+
+.forum > *{
+    font-weight: 200;
+    font-size: 15px;
+}
+.forum form > input:not(.forum input[type="checkbox"]){
+    border: 1px solid black;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+.forum input[type="checkbox"]{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.forum > form > div{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forum > form > div > div{
+    display: flex;
+    align-items: center;
+}
+
+.forum > form > div > div label{
+    margin-left: 10px;
+}
+
+.forum button{
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.forum button:hover{
+    background-color: #C0C0C0;
+    color: black;
+}
+
+.picture{
+    height: 800px;
+    width: 100%;
+    background-image: url(https://www.w3schools.com/w3images/map.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.contact-content h2:first-child{
+    text-decoration: underline;
+    text-decoration-color: #009688;
+    text-decoration-thickness: 5px;
+}
+
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.social-media{
+    display: flex;
+    
+}
+
+.footer > h2{
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.social-media li{
+    margin-left: 5px;
+    height: 40px;
+    width: 40px;
+    background-color: #009688;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.social-media img
+{
+    width: 18px;
+    filter: brightness(0) invert(1);
+    
+    
+}
+
+.social-media li:hover > img{
+    filter: brightness(0%);
+}
+
+.social-media li:hover{
+    background-color: white;
+}
